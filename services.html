@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - GearXpert</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .service-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card .fa-stack {
+            margin-bottom: 20px;
+        }
+
+        .service-card .fa-circle {
+            color: #007bff;
+        }
+
+        .service-card .fa-inverse {
+            color: #ffffff;
+        }
+
+        .service-heading {
+            font-size: 1.75rem;
+            margin-bottom: 15px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .service-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 1.5em;
+        }
+
+        .service-list li:before {
+            content: "\2022";
+            color: #007bff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Services Section -->
+    <section class="service-section">
+        <div class="container text-center">
+            <h1>Services</h1>
+            <p>Learn more about our range of services.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Breakdown Service</h4>
+                        <img src="images/all.jpeg" alt="Breakdown Service">
+                        <ul class="service-list text-muted">
+                            <li>European and Japanese Vehicles</li>
+                            <li>All Kinds of Maintenance (Heavy and Light Vehicles)</li>
+                            <li>Steering and Suspension Repairs</li>
+                            <li>Engine Repairs</li>
+                            <li>Transmission Repairs</li>
+                            <li>Overhaul of Brakes and Clutch</li>
+                            <li>Air Conditioning System Repair</li>
+                            <li>Tyre Replacements and Wheel Balancing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Vehicle Health Check & Diagnostics</h4>
+                        <img src="images/scan.png" alt="Health Check Report">
+                        <ul class="service-list text-muted">
+                            <li>SCAN all individual vehicle control units/systems</li>
+                            <li>Troubleshooting and Electrical Repairs</li>
+                            <li>Hybrid and Electric Vehicle Repairs</li>
+                            <li>REPORT on logged fault codes</li>
+                            <li>RESET of fault codes as required</li>
+                            <li>All Lost Key and ECU Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="service-card">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Specialise in Hydraulic Earth Equipment Machinery</h4>
+                        <img src="images/spare.jpg" alt="Hydraulic Earth Equipment Machinery">
+                        <ul class="service-list text-muted">
+                            <li>Mechanical Repairs: Expert services for mechanical issues, ensuring minimal downtime.</li>
+                            <li>Service and Maintenance: Regular upkeep for reliable and efficient performance.</li>
+                            <li>Overhauling: Restoring machinery and vehicles to optimal condition.</li>
+                            <li>Troubleshooting: Swift and accurate problem diagnosis to prevent costly delays.</li>
+                            <li>Component Replacement: High-quality parts for extended equipment life.</li>
+                            <li>Breakdown Services: Rapid response for unexpected breakdowns.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(function(){
+            $("#header").load("HnD/header.html"); 
+            $("#footer").load("HnD/footer.html"); 
+        });
+    </script>
+</body>
+</html>

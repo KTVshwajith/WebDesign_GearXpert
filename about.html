@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GearXpert</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .about-hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.25rem;
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .about-section img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .about-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .team-section {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+        }
+
+        .team-section .col-md-4 {
+            margin-bottom: 30px;
+        }
+
+        .team-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our story and team.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/story.png" alt="Company History">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>GearXpert is a premier automotive service company dedicated to providing top-notch maintenance, repair, and diagnostic services for all types of vehicles. Founded with a passion for automotive excellence, our mission is to ensure every car that comes through our doors leaves in optimal condition, delivering safety and performance to its owner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Expertise</h2>
+                    <p>At GearXpert, our team of certified technicians brings years of experience and specialized knowledge to handle a wide range of automotive needs. From routine oil changes and brake inspections to complex engine repairs and advanced diagnostic services, we are equipped to address any issue your vehicle may encounter.</p>
+                    <p>We utilize state-of-the-art tools and the latest technology to ensure precision and efficiency in every service we provide.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/expert.png" alt="Our Expertise">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section 
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/human.png" alt="Team Member">
+                    <h4>John Doe</h4>
+                    <p>Head Technician</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/human.png" alt="Team Member">
+                    <h4>Jane Smith</h4>
+                    <p>Service Manager</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/human.png" alt="Team Member">
+                    <h4>Mike Johnson</h4>
+                    <p>Diagnostic Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="m-0 text-center">&copy; 2024 GearXpert. All rights reserved.</p>
+            <div class="social-icons text-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(function(){
+            $("#header").load("HnD/header.html"); 
+            $("#footer").load("HnD/footer.html"); 
+        });
+    </script>
+</body>
+</html>

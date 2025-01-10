@@ -1,0 +1,198 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #10a90a;
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: 700; /* Increase font weight */
+    color: #fff; /* White text color for contrast */
+    padding: 10px 15px; /* Increase padding */
+    text-transform: uppercase; /* Uppercase text */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #10a90a; /* Text color on hover */
+    background-color: #fff; /* Background color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #10a90a; /* Active link text color */
+    background-color: #fff; /* Active link background color */
+    border-radius: 5px; /* Rounded corners for active link */
+}
+
+
+.masthead {
+    background-image: url('../images/image03.jpg'); /* Ensure the correct relative path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+}
+
+.masthead .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.masthead .intro-lead-in {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+}
+
+.masthead .intro-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+}
+
+.masthead .btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.masthead .btn:hover {
+    background-color: #fff;
+    color: #10a90a;
+    border-color: #10a90a;
+}
+
+.footer {
+    background-color: #10a90a;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    color: #f4d03f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9);
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #333;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4d03f;
+}
+
+/* Services Section */
+.service-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.service-section .fa-stack {
+    margin-bottom: 20px;
+}
+
+.service-section .service-heading {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.service-section .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.service-section .service-list li {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.service-section iframe {
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-icons a {
+    color: #f4d03f;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+

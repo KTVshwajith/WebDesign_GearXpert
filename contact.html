@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GearXpert</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        #contact {
+            padding: 60px 0;
+            background-color: #dfe9f4;
+        }
+
+        .contact-heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #0b0b0b;
+            font-weight: bold;
+        }
+
+        .contact-subheading {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .contact-details {
+            margin-bottom: 40px;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-form, .review-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .form-control {
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 1rem;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .rating input:checked ~ label,
+        .rating input:hover ~ label {
+            color: #ffcc00;
+        }
+
+        @media (max-width: 768px) {
+            .contact-heading {
+                font-size: 2rem;
+            }
+
+            .contact-subheading {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="flex-fill">
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="contact-heading">Contact Us</h2>
+                        <h3 class="contact-subheading">Get in touch with us for any queries or concerns.</h3>
+                    </div>
+                </div>
+                <div class="row text-center contact-details">
+                    <div class="col-lg-12">
+                        <p>Email: <a href="mailto:gearxpertnz@gmail.com">gearxpertnz@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+64211263653">+64 21 126 3653</a></p>
+                        <p>Address: Auckland, New Zealand</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-form">
+                            <form id="contactForm" name="contactMessage" novalidate="novalidate" action="send_contact.php" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone" data-validation-required-message="Please enter your phone number.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review Section -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="review-form">
+                            <h3 class="text-center">Leave a Review</h3>
+                            <form id="reviewForm" name="reviewForm" action="submit_review.php" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="reviewerName" name="reviewerName" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="reviewerEmail" name="reviewerEmail" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="reviewMessage" name="reviewMessage" placeholder="Your Review *" required="required" data-validation-required-message="Please enter your review."></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="rating text-center">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5">&#9733;</label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4">&#9733;</label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3">&#9733;</label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2">&#9733;</label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1">&#9733;</label>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="reviewSuccess"></div>
+                                        <button id="submitReviewButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Submit Review</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <script>
+        $(function(){
+            $("#header").load("HnD/header.html"); 
+            $("#footer").load("HnD/footer.html"); 
+        });
+    </script>
+</body>
+</html>
